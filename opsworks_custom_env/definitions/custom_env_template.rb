@@ -6,6 +6,8 @@
 # Notifies a "restart Rails app <name>" resource.
 
 define :custom_env_template do
+
+  include_recipe "rails::configure"
   
   template "#{params[:deploy][:deploy_to]}/shared/config/application.yml" do
     source "application.yml.erb"
