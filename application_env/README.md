@@ -1,6 +1,8 @@
 application\_env
 ===================
 
+Adapted from https://github.com/joeyAghion/opsworks_custom_env.
+
 This cookbook allows Rails apps on [Amazon OpsWorks](http://aws.amazon.com/opsworks/) to separate their configuration from their code. In keeping with [Heroku's twelve-factor app](http://www.12factor.net/config), the configuration is made available to the app's environment.
 
 To accomplish this, the cookbook maintains a `config/application.yml` file in each respective app's deploy directory. E.g.:
