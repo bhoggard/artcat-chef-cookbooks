@@ -1,4 +1,4 @@
-opsworks\_custom\_env
+application\_env
 ===================
 
 This cookbook allows Rails apps on [Amazon OpsWorks](http://aws.amazon.com/opsworks/) to separate their configuration from their code. In keeping with [Heroku's twelve-factor app](http://www.12factor.net/config), the configuration is made available to the app's environment.
@@ -42,4 +42,4 @@ At the moment, only Unicorn/Nginx-style Rails apps are supported.
 Opsworks Set-Up
 ---------------
 
-The `opsworks_custom_env::configure` recipe should be added as a custom recipe to the _Deploy_ event. It executes a _restart Rails app APPNAME_ resource when the settings have changed, so ensure that this is defined. (In a typical rails layer, this is provided by the `rails::configure` recipe.)
+The `application_env::configure` recipe should be added as a custom recipe to the _Deploy_ event. It executes a _restart Rails app APPNAME_ resource when the settings have changed, so ensure that this is defined. (In a typical rails layer, this is provided by the `rails::configure` recipe.)
