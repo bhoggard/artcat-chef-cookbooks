@@ -7,7 +7,7 @@
 
 define :custom_env_template do
 
-  include_recipe "arcat::restart_app"
+  include_recipe "artcat::restart_app"
   
   template "#{params[:deploy][:deploy_to]}/shared/config/application.yml" do
     source "application.yml.erb"
