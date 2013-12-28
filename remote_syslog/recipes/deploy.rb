@@ -21,7 +21,7 @@ node[:deploy].each do |application, deploy|
   end
 
   logs_list = []
-  node[:scalarium][:instance][:roles].each do |role|
+  node[:opsworks][:instance][:roles].each do |role|
     logs_list = logs_list + node[:remote_syslog][:logs][role] if node[:remote_syslog][:logs][role]
   end
 
