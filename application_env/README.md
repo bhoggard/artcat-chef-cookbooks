@@ -22,7 +22,7 @@ Configuration values are specified in the [stack's custom JSON](http://docs.aws.
           "BAR": "1001"
         }
       },
-      
+
       "deploy": {
         "my_app": {
           "symlink_before_migrate": {
@@ -44,4 +44,4 @@ At the moment, only Unicorn/Nginx-style Rails apps are supported.
 Opsworks Set-Up
 ---------------
 
-The `application_env::configure` recipe should be added as a custom recipe to the _Deploy_ event. It executes a _restart Rails app APPNAME_ resource when the settings have changed, so ensure that this is defined. (In a typical rails layer, this is provided by the `rails::configure` recipe.)
+The `application_env::configure` recipe should be added as a custom recipe to the _Setup_ and _Deploy_ events for the _Rails App Server_ layer. It executes a _restart Rails app APPNAME_ resource when the settings have changed, so ensure that this is defined. (In a typical rails layer, this is provided by the `rails::configure` recipe.)
