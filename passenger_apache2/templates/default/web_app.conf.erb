@@ -21,6 +21,9 @@
     AllowOverride None
     Order allow,deny
     Allow from all
+    SetEnvIfNoCase Referer semalt.com spammer=yes
+    SetEnvIfNoCase Referer ".social-buttons.com$" spammer=yes
+    Deny from env=spammer
   </Directory>
 
   <Directory ~ "\.svn">
