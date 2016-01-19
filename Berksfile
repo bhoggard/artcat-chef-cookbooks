@@ -2,4 +2,5 @@
 # -*- encoding : utf-8 -*-
 source "https://api.berkshelf.com"
 
-cookbook 'remote_syslog2', github: 'bhoggard/remote_syslog2-cookbook'
+cookbook 'remote_syslog2', github: "bhoggard/remote_syslog2"
+
