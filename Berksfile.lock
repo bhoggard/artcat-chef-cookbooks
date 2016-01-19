@@ -1,7 +1,7 @@
 DEPENDENCIES
   remote_syslog2
     git: git://github.com/bhoggard/remote_syslog2.git
-    revision: af4ef6a78688534139d07640aad1871af62024fc
+    revision: 0b9fdc435f619fdcb6ed2f9d21f3b14496143a9a
 
 GRAPH
-  remote_syslog2 (0.1.1)
+  remote_syslog2 (0.1.2)
